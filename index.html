@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="author" content="Miriam López Vega"><!--Autor de la página-->
+        <title>Diario de Aprendizaje</title><!--Título del documento-->
+        <link rel="stylesheet" href="styles.css"><!--Link del archivo CSS externo-->
+    </head>
+    <body id="bodyform">
+        <!-- Encabezado con logo, título y barra de navegación -->
+        <header>
+            <div id="div_encabezado"><!--"id" asigna estilos a un elemento en concreto-->
+                <img id="Logo" src=img\ImgDiarioAprendizj.jpeg alt="Logo">
+                <h2>Diario de Aprendizaje</h2>
+                <aside><!--"aside" define contenido que está indirectamente relacionado con el contenido principal de la página, como una sección complementaria-->
+                    <nav> <!-- Enlaces de navegación -->
+                        <a href=principalchula.html class="botonesnav"><b>Unidad 1- GIT</b></a><!--Enlaces a las páginas desde los botones del nav-->
+                        <a  class="botonesnav"><b>UD 2: "Hosting"</b></a>
+                    </nav>
+                </aside>    
+            </div><!--Cierre del contenedor-->
+        </header>
+        <nav id="navmenu">
+            <ul class="menu">
+                <li>
+                    <h2>MENÚ:</h2>
+                    <a href="#" class="unidad">Unidad 1: "GIT"</a>
+                    <ul class="submenu">
+                        <li><a href="#Tema1.1">Tema 1</a></li>
+                        <li><a href="#Tema2.1">Tema 2</a></li>
+                        <li><a href="#Tema3.1">Tema 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="unidad">Unidad 2: "Hosting"</a>
+                    <ul class="submenu">
+                        <li><a href="#tema1">Tema 1</a></li>
+                        <li><a href="#tema2">Tema 2</a></li>
+                        <li><a href="#tema3">Tema 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="divcontenidoprincipal">
+            <section id="Tema1.1">
+                <div id="divtítulo"><!--Div que contiene un <span> como introducción al formulario-->
+                    <h2 id="h2titulo">TEMA 1:</h2>
+                </div>
+                <fieldset id="Recursos1">
+                    <legend><h4 class="legend">¿QUÉ RECURSOS HE UTILIZADO EN ESTA UNIDAD?:</h4></legend>
+                    <p>Para esta unidad basada en Git, he tenido que buscar algunos recursos para poder comprender bien los contenidos del material. Entre ellos he buscado una <b>"playlist"</b>  de algunos vídeos que me han ayudado bastante:</p>
+                    <li><b>Playlist de Youtube de "Píldoras Informáticas": </b><a href="https://www.youtube.com/playlist?list=PLU8oAlHdN5BlyaPFiNQcV0xDqy0eR35aU">Click aquí</a></li>
+                    <li><b>Un curso de OpenWebinars: </b><a href="https://openwebinars.net/cursos/git/">Click aquí</a></li>
+                    <li><b>Unos apuntes de W3Schools: </b><a href="https://www.w3schools.com/git/default.asp">Click aquí</a></li>
+                </fieldset>
+
+                <h2 id="nombrepuntos">1. Introducción a GIT:</h2>
+                <fieldset id="fieldset1-1-1">
+                    <legend><h4 class="legend">1.1.1 ¿Qué es Git?:</h4></legend>
+                    <p>Git es un software de control de versiones, diseñado por Linus Torvalds. Permite a los desarrolladores rastrear y gestionar los cambios en el código fuente (control de versiones).</p>
+                </fieldset>
+
+
+                <fieldset id="fieldset1-1-2">
+                    <legend><h4 class="legend">1.1.2 Conceptos básicos:</h4></legend>
+                        <li><span class="resaltadoamarillo">Repositorio:</span> Un lugar donde se almacena todo el código de un proyecto.</li>
+                        <li><span class="resaltadoamarillo">Commit:</span>Un "punto de control" guardado con un mensaje que describe los cambios realizados.</li>
+                        <li><span class="resaltadoamarillo">Rama (Branch):</span> Una línea de trabajo paralela donde puedes realizar cambios sin afectar la rama principal.</li>
+                        <li><span class="resaltadoamarillo">Fusión (Merge):</span> Combina los cambios de diferentes ramas en una sola.</li>
+                        <li><span class="resaltadoamarillo">Clonar (Clone):</span> Copiar un repositorio a tu máquina local.</li>
+            
+                </fieldset> 
+
+                <fieldset id="fieldset1-1-3">
+                    <legend><h4 class="legend">1.1.3 Buenas prácticas:</h4></legend>
+                        <li>Haz commits frecuentes y con mensajes claros.</li>
+                        <li>Usa ramas para trabajar en nuevas características.</li>
+                        <li>Fusiona ramas regularmente para evitar conflictos.</li>
+                </fieldset>
+        </section>
+        <section>
+            <h2 id="nombrepuntos">1.2. Configuración inicial</h2>
+            <fieldset id="fieldset1-2-1">
+                <legend><h4 class="legend">1.2.1 ¿En qué consiste?:</h4></legend>
+                <p>En esta sección se explica cómo realizar la configuración inicial de Git, lo cual es necesario para registrar los "commits" correctamente. Los comandos para configurar Git son 3:</p>
+                    <li><code class="resaltadogris">git config --global user.name "Tu Nombre"</code>:Este comando establece el nombre del usuario que aparecerá en los commits. El "--global" indica que esta configuración se aplicará a todos los repositorios de Git en tu máquina."Tu Nombre" es el nombre que deseas usar. Puede ser tu nombre real o un alias.</li>
+                    <li><code class="resaltadogris">git config --global user.email "tuemail@ejemplo.com"</code>: Este comando establece el correo electrónico del usuario que aparecerá en los commits. Al igual que el anterior, el "--global" aplica esta configuración a nivel global en tu máquina.</li>
+                    <li><code class="resaltadogris">git config --global core.editor "nombre_editor"</code>: Configura el editor de texto por defecto que Git utilizará para abrir archivo de texto. (opcional).</li>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2 id="nombrepuntos">1.3. Comandos</h2>
+            <fieldset id="fieldset1-3-1">
+            <legend><h4 class="legend">1.3.1 Comandos Básicos:</h4></legend>
+            <p>En esta sección se explica cómo realizar la <b>configuración inicial de Git</b>, lo cual es necesario para registrar los "commits" correctamente. Los comandos para configurar Git son 3:</p>
+                    <li><code class="resaltadogris">git help</code>: Muestra la ayuda del comando que se indique.</li>
+                    <li><code class="resaltadogris">git init</code>: Inicializa el repositorio local.</li>
+                    <p>Para <span class="resaltadorosa">subir cambios</span> al repositorio remoto, debemos entender varios conceptos; el directorio de trabajo es donde están nuestros archivos. Con GIT INIT creamos nuestro staging y área local.
+                        <p>-Para agregar archivos al área staging utilizaremos <b>GIT ADD NOMBRE_ARCHIVO</b>, para agregar un archivo en especifico, tambien podemos utilizar "." y añade todos los archivos.
+                        <br/><br/>Enviamos nuestros archivos al repositorio local. Agregando <b>GIT COMMIT -m ""</b> que hace referencia al mensaje o nombre que utilizaremos para identificar al commit y además, registra el commit.
+                        <br/><br/>-Por último y una vez realizados los commits, debemos simplemente enviarlos al repositorio remoto utilizando <b>GIT PUSH</b>.</p>
+                        <p><span class="problemas">Problemas que me he encontrado:</span> Ha habido veces que me he confundido y he puesto en el mensaje de un commit algo que no quería poner y busqué cómo cambiar el mensaje de un commit ya hecho. También, añadía al staging todos los ficheros que había creado, en lugar de, subir uno en concreto para hacer un commit de uno en específico.</p>
+        </fieldset>
+        </section>
+        <section>
+            <fieldset id="fieldset1-3-2">
+                <legend><h4 class="legend">1.3.2 Empezando a funcionar:</h4></legend>
+                <ul>
+                <li><code class="resaltadorosa">git status</code>: Muestra el estado de los archivos en el repositorio (cambios, archivos en staging, etc.).</li>
+                <li><code class="resaltadorosa">git log</code> y <code class="resaltadorosa">git log --oneline</code>: Muestra el historial de commits, detallado o en resumen.</li>
+                </ul><br/>
+                <p><span class="problemas">Problemas que me he encontrado:</span> Al principio confundía "git status" con "git log --oneline".  También he tenido problemas al utilizar "git log" en ramas que contenían muchos commits, el historial se hacía ENORME. Ahí descubrí que "--oneline" es mejor cuando tienes muchos commits o un proyecto grande.</p>
+                <ul>
+                <li><code class="resaltadorosa">git add [archivo/patrón]</code>: Añade archivos al área de staging.</li>
+                <li><code class="resaltadorosa">git commit -m 'mensaje'</code>: Confirma los archivos en staging con un mensaje descriptivo.</li><br/>
+                <li><code class="resaltadorosa">git checkout [id_commit]</code>: Cambia el directorio de trabajo a un estado específico del commit.</li>
+                </ul>
+                <p><span class="problemas">Problemas que me he encontrado:</span> Al principio confundía mucho cuando el profesor decía de hacer "x" número de commits. Creaba todos los ficheros de golpe y al añadirlos con "git add ." y despúes hacer el commit de todos los archivos, se hacía un commit de todos los ficheros creados, en lugar de, un commit por fichero creado. Ahí aprendí a añadir ficheros en específico: <code class="resaltadorosa">git add [nombrefichero]</code></p>
+                
+                <li><code class="resaltadorosa">git diff</code>: Muestra diferencias entre archivos o entre commits específicos.</li>
+                <p><span class="problemas">Problemas que me he encontrado:</span> Al haberlo practicado una vez en clase, no sé exactamente cómo funciona. Pero imagino que cuando las diferencias o conflictos sean más extensos serán más dificil de resolver o combinar.</p>
+                <ul>
+                <li><code class="resaltadorosa">git remote</code>: Administra conexiones a repositorios remotos.</li>
+                <li><code class="resaltadorosa">git push</code> y <code class="resaltadorosa">git push -u origin main</code>: Envía los commits al servidor remoto, configurando la rama para empujar automáticamente.</li>
+                </ul>
+                <p><span class="problemas">Problemas que me he encontrado:</span> Una vez me confundí y hice push cuando no debeía haberlo hecho y aprendí a eliminar un push en la rama remota utilizando "--delete".</p>
+                <ul>
+                <li><code class="resaltadorosa">git clean</code> y <code class="resaltadorosa">git clean -f</code>: Elimina permanentemente archivos sin seguimiento.</li>
+                <li><code class="resaltadorosa">git reset</code> y <code class="resaltadorosa">git reset --hard</code>: Restaura archivos a un estado anterior. <code><b>--soft</b></code>, <code><b>--mixed</b></code>, y <code><b>--hard</b></code> definen el nivel de restauración.</li>
+                </ul>
+                <p><span class="problemas">Problemas que me he encontrado:</span> Usar <code><b>--hard</b></code> eliminará los cambios sin posibilidad de recuperarlos. A la próxima debería mirar el impacto de cada opción antes de usar este comando.</p>
+                <ul>
+                <li><code class="resaltadorosa">git tag</code>: Crea y muestra etiquetas para marcar commits específicos.</li>
+                <li><code class="resaltadorosa">git revert</code>: Deshace cambios de un commit, creando un nuevo commit de reversión.</li>
+                </ul>
+                <p><span class="problemas">Problemas que me he encontrado:</span> Si hay conflictos en el código al revertir, resolverlos puede ser complicado. Este comando es útil para mantener el historial, pero tenemos que revisar bien los cambios antes de ejecutar.</p>
+            </fieldset>
+        </section>
+
+<!--Tema2-PDF2-->
+    <section id="Tema2.1">
+        <div id="divtítulo">
+            <h2 id="h2titulo">TEMA 2:</h2>
+        </div>
+        <h2 id="nombrepuntos">2.1. Trabajando con Ramas en Git.</h2>
+                <fieldset id="fieldset2-1-1">
+                    <legend><h4 class="legend">2.1.1 Creación y Gestión de Ramas:</h4></legend>
+                    <ul>
+                        <li><code class="resaltadomorado">git branch</code>: Lista todas las ramas existentes.</li>
+                        <li><code class="resaltadomorado">git branch [nombre_nueva_rama]</code>: Crea una nueva rama.</li>
+                        <li><code class="resaltadomorado">git branch -d [nombre_rama]</code>: Elimina una rama.</li>
+                        <li><code class="resaltadomorado">git branch -m [antiguo_nombre_rama] [nuevo_nombre_rama]</code>: Renombra una rama.</li>
+                    </ul>
+                    <p><span class="problemas">Problemas que me he encontrado:</span>Con las ramas he tenido bastantes problemas, por ejemplo, he añadido archivos a ramas a las que no debería por no estar posicionada en la rama correcta. Me he confundido al ponerles un nombre y tuve que buscar cómo cambiarlo.</p>
+                    <span>También hemos aprendido a <b>movernos entre ramas:</b></span>
+                    <ul>
+                        <li><code class="resaltadomorado">git checkout [nombre_rama]</code>: Cambia de una rama a otra.</li>
+                        <li><code class="resaltadomorado">git checkout -b [nombre_rama]</code>: Crea una nueva rama y cambia a ella.</li>
+                        <li><code class="resaltadomorado">git checkout [ID_commit]</code>: Cambia a un commit anterior.</li>
+                    </ul>
+                    <p><span class="problemas">Problemas que me he encontrado:</span> Al principio confundía la sintaxis de crear y cambiarse de rama. En lugar de poner "-b" ponía "-m" como cuando realizamos un commit. Ahí comprendí que la "-b" era de "branch".</p>
+                    <span>Y <b>fusionarlas:</b></span>
+                    <ul>
+                        <li><code class="resaltadomorado">git merge [nombre_rama]</code>: Fusiona una rama con la activa.</li>
+                        <li><code class="resaltadomorado">git merge --abort</code>: Cancela la fusión en caso de conflicto.</li>
+                    </ul>
+                    <p><span class="problemas">Problemas que me he encontrado:</span>He fusionado ramas incorrectas, porque la fusión se realiza sobre la rama activa y no estaba posicionada en la correcta.</p>
+                </fieldset>
+    </section>
+    <section>
+        <fieldset id="fieldset2-1-2">
+            <legend><h4 class="legend">2.1.2 Visualización de Commits y Logs:</h4></legend>
+            
+            <ul>
+                <li><code class="resaltadoamarillo">git log</code>: muestra el historial de commits.</li>
+                <li><code class="resaltadoamarillo">git log -p</code>: historial con cambios detallados.</li>
+                <li><code class="resaltadoamarillo">git log --oneline</code>: historial en una sola línea por commit.</li>
+                <li><code class="resaltadoamarillo">git log --oneline --all</code>: historial de todas las ramas.</li>
+            </ul>
+            <p><span class="problemas">Problemas que me he encontrado:</span>Cuando he tenido proyectos muy grandes he utilizado "git log" y me ha aparecido un historial muy extenso.Por ello, me parece que es más cómodo y útil utilizar "oneline".</p>
+        </fieldset>
+    </section>
+    <section>
+        <fieldset id="fieldset2-1-3">
+            <legend><h4 class="legend">2.1.3 Resolución de conflictos, visualización y diferencias:</h4></legend>
+            <ul>
+                <li><code class="resaltadoamarillo">git diff [branch_origen] [branch_destino]</code>: muestra las diferencias entre ramas.</li>
+                <li><code class="resaltadoamarillo">git log --merge</code>: muestra información de los commits que causan conflictos.</li>
+            </ul>
+        </fieldset>
+    </section>
+    <section id="Tema3.1">
+        <div id="divtítulo">
+            <h2 id="h2titulo">TEMA 3:</h2>
+        </div>
+        <h2 id="nombrepuntos">3.1. Clone, Pull y Fetch.</h2>
+            <fieldset id="fieldset3-1-1">
+                <legend><h4 class="legend">3.1.1. Clonar y Actualizar Repositorios:</h4></legend>
+                <p>Aprende los comandos básicos de <b>Git</b> para gestionar repositorios locales y remotos:</p>
+                <ul>
+                    <li><code class="resaltadoamarillo">git clone [remote_repo] [directorio_local]</code>:Copia un repositorio remoto en tu máquina local.</li>
+                    <li><code class="resaltadoamarillo">git clone --branch [tag] [remote_repo]</code>Clona una versión específica del repositorio remoto.</li>
+                    <li><code class="resaltadoamarillo">git clone --branch --single-branch [branch_name] [remote_repo]</code>:Clona una rama específica del repositorio remoto.</li>
+                </ul>
+
+                <p>Actualizar los repositorios locales con los cambios del servidor remoto:</p>
+                <ul>
+                    <li><code class="resaltadomorado">git pull [servidor_remoto]</code>:<b>Fusiona</b> los cambios del repositorio remoto en el directorio de trabajo local.</li>
+                    <li><code class="resaltadomorado">git pull [servidor_remoto] [rama]</code>:<b>Descarga</b> una rama específica del servidor remoto.</li>
+                    <li><code class="resaltadomorado">git pull --verbose [servidor_remoto]</code>:Muestra un proceso detallado del comando <b>pull</b>.</li>
+                </ul>
+                <p><span class="problemas">Problemas que me he encontrado:</span> Como <b>pull</b> es una fusión entre <b>fetch</b> y <b>merge</b>, al hacer pull me encontré de repente que en la consola se había abierto un terminal para hacer commits de confirmación de los cambios para el merge. No me esperaba eso y no supe qué tenía que hacer ya que no dejaba escribir. Más tarde, comprendí que había que hacer un commit. Tampoco sabía que para hacer pull debías añadir la referencia al repositorio remoto con "git remote add".</p>
+                <p>Si quieres solo descargar los cambios <b>sin fusionar:</b></p>
+                <ul>
+                    <li><code class="resaltadorosa">git fetch [nombre_servidor_remoto]</code>:Recupera datos del proyecto remoto sin fusionar con tu trabajo actual.</li>
+                    <li><code class="resaltadorosa">git checkout fetch_HEAD</code>:Cambia a la rama con los cambios descargados mediante <b>fetch</b>.</li>
+                    <li><code class="resaltadorosa">git checkout -b [new_Branch]</code>:Crea una nueva rama basada en los cambios descargados del remoto.</li>
+                    <li><code class="resaltadomorado">git merge [rama]</code>:Fusiona cambios de una rama específica con la rama actual.</li>
+                    <li><code class="resaltadomorado">git diff [rama_local] [rama_remota_cambios]</code>:Compara los cambios entre dos ramas.</li>
+                </ul>
+                <p><span class="problemas">Problemas que me he encontrado:</span>"git diff" puede llegar a ser complicado debido a la comparación de las dos ramas.</p>
+            </fieldset>
+    </section>
+</div>
+    </body><!--Cierre del cuerpo del documento-->
+</html>

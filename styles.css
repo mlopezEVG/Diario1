@@ -1,0 +1,295 @@
+/* Estilos para el menú principal */
+#bodyform{
+    max-width: 1280px;/*Resolución de la página*/
+    margin:0 auto;/*Coloca centrada la página*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(184, 153, 114);
+    /* display:flow-root; */
+}
+
+#navmenu {
+    width: 202px;
+    height: 4895px; /* MODIFCAR VALOR SI SE AÑADE MAS CONTENIDO PARA QUE EL ASIDE BAJE MAS ----------- */
+    margin: 20px 20px 0 20px; /* Cambia el margen derecho para darle separación */
+    float: left; /* Para colocarlo a la izquierda del contenido principal */
+}
+
+.menu {
+    border: 2px solid white;
+    background-color: rgb(65, 51, 32);
+    list-style-type: none;
+    padding: 0;
+    /* margin-top: 20px; */
+    background-color: rgb(65, 51, 32);
+    width: 180px;
+    height: 90vh;
+    padding: 2vh 1vw;
+    position: sticky;
+    top: 20px;
+}
+
+.menu > li {
+    position: relative;
+}
+
+/* Enlaces principales (Unidades)*/
+.menu > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(65, 51, 32);
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    transition: background-color 0.3s;
+}
+
+.menu > li > h2{
+    color: rgb(218, 195, 165);
+    margin-left: 10px;
+}
+
+/* Cambia el color al pasar el ratón */
+.menu > li > a:hover {
+    background-color: rgb(218, 195, 165);
+}
+
+/* Submenú oculto inicialmente */
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding: 10px 0px 10px 50px;
+    margin: 0;
+    background-color: rgb(65, 51, 32);
+}
+
+/* Estilos para los enlaces del submenú */
+.submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(65, 51, 32);
+    transition: background-color 0.3s;
+}
+
+/* Cambia el color del submenú al pasar el ratón */
+.submenu li a:hover {
+    background-color: rgb(218, 195, 165);
+}
+
+/* Mostrar el submenú al hacer clic en la unidad */
+.menu > li:focus-within .submenu {
+    display: block;
+}
+
+header{
+    background-color: rgb(180, 233, 180);/* Establece el color de fondo del encabezado */
+    margin-left: 20px;/* Añade un margen a la izquierda del encabezado */
+    margin-top: 10px;/* Añade un margen en la parte superior del encabezado */
+    padding-top:5px;/* Añade un relleno en la parte superior del encabezado */
+    padding-bottom:5px;/* Añade un relleno en la parte inferior del encabezado */
+}
+#div_encabezado{
+    margin: 10px 25px 10px 25px;
+    border: 3px solid rgb(73, 160, 73);/* Establece un borde de 3px de color verde alrededor del div */
+    background-color: rgb(255, 255, 255);/* Establece el color de fondo del div */
+    height:8vh;/* Establece la altura del div en 8% de la altura de la ventana gráfica */
+    line-height: 8vh;/* Establece la altura de línea para centrar verticalmente el contenido */
+}
+ #div_encabezado img ,#div_encabezado h2, #div_encabezado nav{ /*Aplica estilos a los elementos del div_encabezado*/
+    display:inline-block;/* Hace que los elementos se alineen en línea , sustituto de display. flex;*/
+}
+#Logo{/*Aplica estilos a la imagen del logo de la página*/
+    max-width: 4.6%;/* Establece el ancho máximo de la imagen del logo */
+    height:auto;/* Ajusta la altura automáticamente para mantener la proporción */
+    margin-bottom: 0px;
+}
+h2{/*Aplica estilos al nombre de la página web en tamaño h2*/
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    padding-left: 5px;
+    padding-top:0px;
+}
+aside{
+    float:right;/* Hace que el aside flote a la derecha */
+    margin-right:40px;/* Añade un margen a la derecha del aside */
+}
+.botonesnav{/*Establece el estilo del botón de la barra de navegación */
+    background-color:rgb(171, 231, 171);/* Establece el color de fondo del botón */
+    cursor:pointer;/* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    margin-right:10px;/*A diferencia del botón de Únete a este le añado un margen a la derecha para separarlo del otro botón*/
+    border:2px solid black;/* Establece un borde negro de 2px alrededor del botón */
+    padding:2px;/* Añade un relleno de 2px dentro del botón */
+    text-decoration: none;
+}
+/* Pseudoclase para poner estilos a los enlaces*/
+.botonesnav :active {
+    color: white; /* Color del texto del enlace no visitado */
+}
+.divcontenidoprincipal {
+    margin: 80px 10px 0px 600px;
+    padding-left: 20px; /* Añade un pequeño padding para mayor separación interna si lo deseas */
+    float: left;
+}
+#divtítulo{
+    background-color:  rgb(218, 195, 165);/* Establece el color de fondo del div */
+    margin-top: 30px;
+    margin-bottom: 1px;
+    margin-left: 270px;
+    width: fit-content;
+    /* display:inline-block;Hace que el div se comporte como un elemento en línea */
+}
+#h2titulo{
+    margin-top: 0px;/* Elimina el margen superior del h3 */
+    border: 3px solid white;
+    margin-bottom: 0px;/* Elimina el margen inferior del h3 */
+    padding: 10px 5px 10px 5px;     /*Añade padding a todos los lados del <span> utilizado como introducción al formulario*/
+    width: fit-content;
+}
+#nombrepuntos{
+    padding-top: 10px;
+    margin-left:270px;
+}
+.legend{/*Añade estilos al legend  del formulario*/
+    margin-left: 0px;
+    margin-right:0px;
+    margin-top: 5px;/* Añade un margen en la parte superior del h4 */
+    margin-bottom: 0px;
+    background-color:  rgb(65, 51, 32);
+    color:rgb(245, 233, 216);
+    border:2px solid white;
+}
+#Recursos1{
+    border:3px solid white;
+    width: 700px;
+    height: 180px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 50px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+#Recursos1>li > a{
+    background-color: rgb(218, 116, 88);
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+
+}
+#fieldset1-1-1{
+    border:3px solid white;
+    width: 700px;
+    height: 130px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+
+#fieldset1-1-2{
+    border:3px solid white;
+    width: 700px;
+    height: 190px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+#fieldset1-1-3{
+    border:3px solid white;
+    width: 700px;
+    height: 100px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+#fieldset1-2-1{
+    border:3px solid white;
+    width: 700px;
+    height: 300px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+#fieldset1-3-1{
+    border:3px solid white;
+    width: 700px;
+    height: 550px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+#fieldset1-3-2{
+    border:3px solid white;
+    width: 700px;
+    height: 1100px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+#fieldset2-1-1{
+    border:3px solid white;
+    width: 700px;
+    height: 540px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+#fieldset2-1-2{
+    border:3px solid white;
+    width: 700px;
+    height: 200px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+#fieldset2-1-3{
+    border:3px solid white;
+    width: 700px;
+    height: 100px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+#fieldset3-1-1{
+    border:3px solid white;
+    width: 700px;
+    height: 750px;
+    background-color:  rgb(232, 212, 189);
+    margin:0px 0px 0px 30px;
+    padding:10px 10px 10px 30px;
+    display:inline-block;
+}
+.resaltadogris {
+    background-color: rgb(191, 194, 198);
+    border-radius: 2px;
+    font-weight: bold;
+  }
+  .resaltadorosa {
+    background-color: rgb(238, 173, 230);
+    border-radius: 2px;
+    font-weight: bold;
+  }
+  .resaltadomorado{
+    background-color: rgb(207, 130, 228);
+    border-radius: 2px;
+    font-weight: bold;
+  }
+  .resaltadoamarillo{
+    background-color: rgb(218, 231, 160);
+    border-radius: 2px;
+    font-weight: bold;
+  }
+.problemas{
+    background-color: lightcoral;
+    font-weight: bold;
+    color:black;
+}
